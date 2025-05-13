@@ -1,0 +1,140 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: linear-gradient( #5d3f6f,black); */
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+.container{
+    margin: 0 auto;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 500PX;
+    margin: 100PX auto;
+    gap: 25px;
+}
+.buttons button{
+    padding: 22px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    background-image: linear-gradient( #5d3f6f,black);
+    color: white;
+    border:2px solid #5d3f6f;
+    border-radius: 20px;
+    transition: background 0.5s,transform 0.5s;
+}
+.buttons button:hover{
+    background: #ac7cc8;
+    color: black;
+    transform: translateY(-16px);
+    padding: 12px;
+}
+.content{
+    margin-top: 20px;
+}
+.content h2{
+    color: white;
+}
+#input{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#birthdayDate{
+     width: 16%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#addBtn{
+    padding: 10px 15px;
+    background-color: #ac7cc8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#list{
+    margin-top: 20px;
+}
+#list li{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+.task-buttons button{
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.delete-btn {
+    background-color: #56465f;
+    color: white;
+}
+
+.update-btn {
+    background-color: #eed1ff;
+    color: black;
+}
+
+.calculator {
+    background-color: #ac7cc8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#display {
+    width: 95%;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #eed1ff;
+    border-radius: 5px;
+    background-color: #f2e1fc;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calc-buttons button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7c7f9;
+    color: black;
+    cursor: pointer;
+}
+
+.calc-buttons button:hover {
+    background-color: #5d3f6f;
+    color: white;
+}
+
+.calc-buttons .zero {
+    grid-column: span 2;
+}
